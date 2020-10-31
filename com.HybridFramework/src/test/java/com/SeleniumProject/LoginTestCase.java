@@ -52,7 +52,7 @@ public void launchBrowser() {
     {
        
 	String title = driver.getTitle();
-		 
+	logger.log(LogStatus.INFO, "verify title");
     loginpage=PageFactory.initElements(driver, LoginObjects.class);
     loginpage.getusername(config.getusername(), config.getpassword());
     loginpage.clickloginbutton();
